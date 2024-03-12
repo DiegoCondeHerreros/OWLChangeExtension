@@ -359,6 +359,67 @@
     <rdfs:subClassOf rdf:resource="#SubClassChange"/>
   </owl:Class>
   <owl:Class rdf:ID="RenameProperty"/>
+#######################################################################################
+#This part of the code corresponds to the properties that are added as part of the Extension.
+  <owl:ObjectProperty rdf:ID="#addedClass_full">
+    <rdfs:domain rdf:resource="#AddClass"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="#addedClass">
+    <rdfs:domain rdf:resource="#AddClass"/>
+    <rdf:range rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:ID="#deletedClass">
+    <rdfs:domain rdf:resource="#RemoveClass"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>  
+  <owl:ObjectProperty rdf:ID="#subAddSubClass">
+    <rdfs:domain rdf:resource="#AddSubClass"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#objAddSubClass">
+    <rdfs:domain rdf:resource="#AddSubClass"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#subRemoveSubClass">
+    <rdfs:domain rdf:resource="#RemoveSubClass"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#objRemoveSubClass">
+    <rdfs:domain rdf:resource="#RemoveSubClass"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#domainAddObjectProperty">
+    <rdfs:domain rdf:resource="#AddObjectProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:ID="#propertyAddObjectProperty">
+    <rdfs:domain rdf:resource="#AddObjectProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#domainRemoveObjectProperty">
+    <rdfs:domain rdf:resource="#RemoveObjectProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#propertyRemoveObjectProperty">
+    <rdfs:domain rdf:resource="#RemoveObjectProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#domainAddDataProperty">
+    <rdfs:domain rdf:resource="#AddDataProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#propertyAddDataProperty">
+    <rdfs:domain rdf:resource="#AddDataProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#domainRemoveDataProperty">
+    <rdfs:domain rdf:resource="#RemoveDataProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="#propertyRemoveDataProperty">
+    <rdfs:domain rdf:resource="#RemoveDataProperty"/>
+    <rdfs:range  rdf:resource="&owl;Thing"/>
+  </owl:ObjectProperty>  
 </rdf:RDF>
-
 <!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->
