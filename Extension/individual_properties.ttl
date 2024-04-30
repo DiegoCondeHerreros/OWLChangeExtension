@@ -1,0 +1,47 @@
+###  http://omv.ontoware.org/2009/09/OWLChanges#AddDifferentIndividual
+och:AddDifferentIndividual rdf:type owl:Class ;
+                        rdfs:subClassOf och:DifferentIndividualChange;
+                       rdfs:label "Addition of the Different From Property";
+                       rdfs:comment "The class of the addition of the owl:differentFrom property change betweeen ontology versions".
+
+                       ###  http://omv.ontoware.org/2009/09/OWLChanges#DifferentIndividualChange
+och:DifferentIndividualChange rdf:type owl:Class ;
+                           rdfs:subClassOf changes:IndividualChange .
+
+###  http://omv.ontoware.org/2009/09/OWLChanges#IndividualObjectPropertyChange
+och:IndividualObjectPropertyChange rdf:type owl:Class ;
+                                rdfs:subClassOf changes:IndividualChange .
+###  http://omv.ontoware.org/2009/09/OWLChanges#IndividualDataPropertyChange
+och:IndividualDataPropertyChange rdf:type owl:Class ;
+                              rdfs:subClassOf changes:IndividualChange .
+
+                              ###  http://omv.ontoware.org/2009/09/OWLChanges#RemoveDifferentIndividual
+och:RemoveDifferentIndividual rdf:type owl:Class ;
+                           rdfs:subClassOf och:DifferentIndividualChange .
+
+
+                           ###  http://omv.ontoware.org/2009/09/OWLChanges#RemoveIndividualDataProperty
+och:RemoveIndividualDataProperty rdf:type owl:Class ;
+                              rdfs:subClassOf och:IndividualDataPropertyChange .
+
+
+###  http://omv.ontoware.org/2009/09/OWLChanges#RemoveIndividualObjectProperty
+och:RemoveIndividualObjectProperty rdf:type owl:Class ;
+                                rdfs:subClassOf och:IndividualObjectPropertyChange .
+
+
+                                ###  http://omv.ontoware.org/2009/09/OWLChanges#RemoveSameIndividual
+och:RemoveSameIndividual rdf:type owl:Class ;
+                      rdfs:subClassOf och:SameIndividualChange .
+
+
+
+
+                      ###  http://omv.ontoware.org/2009/09/OWLChanges#SameIndividualChange
+och:SameIndividualChange rdf:type owl:Class ;
+                      rdfs:subClassOf changes:IndividualChange .
+
+
+                      
+###  http://omv.ontoware.org/2009/09/changes#IndividualChange
+changes:IndividualChange rdf:type owl:Class .
